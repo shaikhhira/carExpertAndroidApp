@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Car Expert System</string>
+    <string name="logo_name">Car Expert</string>
+    <string name="slogan">Help To Reach Your Destination</string>
+    <!--    //onboarding screens-->
+
+    <string name="first_heading">Find a solution</string>
+    <string name="second_heading">Mechanic Service</string>
+    <string name="third_heading">Map Searches</string>
+
+    <string name="first_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</string>
+    <string name="second_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</string>
+    <string name="third_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</string>
+
+    <string name="lets_get_started">Lets Get Started</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+
+    <string name="welcomeHeading">WELCOME</string>
+    <string name="login">LOGIN</string>
+    <string name="sign">SIGNUP</string>
+
+    <string name="user_email">Email</string>
+    <string name="user_password">Password</string>
+    <string name="remember">Rememeber Me</string>
+    <string name="forgetPassword">Forget Password?</string>
+    <string name="dont_have_btn">Don\'t have an account?</string>
+    <string name="back_btn">Back Button</string>
+    <string name="create_an_account">Create an acoount</string>
+    <string name="already_account">Already have account!</string>
+
+
+    <string name="mechanic">Mechanic</string>
+    <string name="google_map_key">AIzaSyDKymeBXNeiFWY5jRUejv6zItpmr2MVyQ0</string>
+</resources>

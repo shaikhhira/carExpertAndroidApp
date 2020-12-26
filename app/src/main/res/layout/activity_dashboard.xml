@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.Dashboard"
+    >
+    <!--    tools:openDrawer="start"-->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:theme="@style/navigationTheme"
+        app:headerLayout="@layout/menu_header"
+        app:menu="@menu/main_menu" />
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp">
+
+            <ImageView
+                android:id="@+id/menu_drawer_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/drawe_image" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.mancj.materialsearchbar.MaterialSearchBar
+                    android:id="@+id/searchBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:mt_hint="Search"
+                    android:layout_marginHorizontal="20dp"
+                    app:mt_maxSuggestionsCount="10" />
+
+                <Spinner
+                    android:id="@+id/brandSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:elevation="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="invisible"
+                    android:background="@android:drawable/editbox_background"/>
+
+
+                <Spinner
+                    android:id="@+id/modelSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="20dp"
+                    android:elevation="5dp"
+                    android:visibility="invisible"
+                    android:background="@android:drawable/editbox_background"/>
+
+
+                <TextView
+                    android:id="@+id/issueText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:text="here issue shows"
+                    android:gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/yesBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="YES"
+                        android:layout_margin="5dp"
+                        android:visibility="invisible"/>
+
+                    <Button
+                        android:id="@+id/noBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="NO"
+                        android:layout_margin="5dp"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/solutionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="solution here"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/workedBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Worked"
+                        android:layout_margin="5dp"
+                        android:visibility="invisible"/>
+
+                    <Button
+                        android:id="@+id/notWorkerbtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="Not Worked"
+                        android:layout_margin="5dp"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/textemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/drawer_image"
+                    android:gravity="center_horizontal"
+                    android:text="Dashboard"
+                    android:textAlignment="center"
+                    android:textSize="40sp"
+                    tools:ignore="NotSibling,UnknownId" />
+
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textemail"
+                    android:text="logout"
+                    android:textSize="20sp"
+                    tools:ignore="UnknownId" />
+
+                <Button
+                    android:id="@+id/map_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/logout"
+                    android:text="map"
+                    android:textSize="20sp"
+                    tools:ignore="UnknownId" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+<!--   bridge use to take colors form material theme as well as from current  theme-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<!--    navigation color-->
+    <style name="navigationTheme">
+
+<!--        color when item is selected-->
+        
+        <item name="colorPrimary">@color/colorPrimary</item>
+        
+<!--        background color when selected-->
+        
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+
+
+</resources>
