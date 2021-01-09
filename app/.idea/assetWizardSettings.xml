@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/share/baseline_share_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/emoji_transportation/baseline_emoji_transportation_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="nav_share" />
+                            <entry key="color" value="da0725" />
+                            <entry key="outputName" value="mechanic_icon" />
                             <entry key="sourceFile" value="C:\Users\AlFurqan\Desktop\carproject\app" />
                           </map>
                         </option>

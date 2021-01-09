@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/rating_animation</item>
     </style>
 
 <!--    navigation color-->
@@ -18,6 +19,14 @@
 <!--        background color when selected-->
         
         <item name="colorControlActivated">@color/black</item>
+    </style>
+
+
+<!--    animation style for rating dialogue box-->
+
+    <style name="rating_animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
     </style>
 
 

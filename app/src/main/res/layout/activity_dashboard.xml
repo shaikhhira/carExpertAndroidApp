@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".User.Dashboard"
     >
+
     <!--    tools:openDrawer="start"-->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigation_view"
@@ -52,19 +53,21 @@
                     android:id="@+id/searchBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:mt_hint="Search"
                     android:layout_marginHorizontal="20dp"
+                    app:mt_hint="Search"
                     app:mt_maxSuggestionsCount="10" />
+
 
                 <Spinner
                     android:id="@+id/brandSpinner"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginHorizontal="20dp"
-                    android:elevation="5dp"
                     android:layout_marginBottom="10dp"
-                    android:visibility="invisible"
-                    android:background="@android:drawable/editbox_background"/>
+                    android:background="@android:drawable/editbox_background"
+                    android:elevation="5dp"
+                    android:padding="20dp"
+                    android:visibility="invisible"/>
 
 
                 <Spinner
@@ -72,41 +75,42 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginHorizontal="20dp"
+                    android:background="@android:drawable/editbox_background"
                     android:elevation="5dp"
-                    android:visibility="invisible"
-                    android:background="@android:drawable/editbox_background"/>
+                    android:padding="20dp"
+                    android:visibility="invisible"/>
 
 
                 <TextView
                     android:id="@+id/issueText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
                     android:text="here issue shows"
-                    android:gravity="center_horizontal" />
+                    android:textAlignment="center" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp">
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/yesBtn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
                         android:layout_weight="0.5"
                         android:text="YES"
-                        android:layout_margin="5dp"
                         android:visibility="invisible"/>
 
                     <Button
                         android:id="@+id/noBtn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
                         android:layout_weight="0.5"
                         android:text="NO"
-                        android:layout_margin="5dp"
                         android:visibility="invisible"/>
 
                 </LinearLayout>
@@ -115,74 +119,47 @@
                     android:id="@+id/solutionText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:text="solution here"
-                    android:textAlignment="center"
-                    android:layout_gravity="center"/>
+                    android:textAlignment="center" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_margin="5dp">
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
 
                     <Button
                         android:id="@+id/workedBtn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
                         android:layout_weight="0.5"
                         android:text="Worked"
-                        android:layout_margin="5dp"
                         android:visibility="invisible"/>
 
                     <Button
                         android:id="@+id/notWorkerbtn"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
                         android:layout_weight="0.5"
                         android:text="Not Worked"
-                        android:layout_margin="5dp"
                         android:visibility="invisible"/>
 
                 </LinearLayout>
-
-                <ListView
-                    android:id="@+id/listView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
 
                 <TextView
                     android:id="@+id/textemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/drawer_image"
                     android:gravity="center_horizontal"
                     android:text="Dashboard"
                     android:textAlignment="center"
-                    android:textSize="40sp"
-                    tools:ignore="NotSibling,UnknownId" />
+                    android:textSize="40sp" />
 
-                <Button
-                    android:id="@+id/logout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/textemail"
-                    android:text="logout"
-                    android:textSize="20sp"
-                    tools:ignore="UnknownId" />
-
-                <Button
-                    android:id="@+id/map_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/logout"
-                    android:text="map"
-                    android:textSize="20sp"
-                    tools:ignore="UnknownId" />
             </LinearLayout>
-
         </ScrollView>
-
-
     </LinearLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
